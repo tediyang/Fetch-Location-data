@@ -1,7 +1,7 @@
 import requests
 
 
-def retrieve_ip_address():
+def retrieve_local_ip_address():
     '''Return IP address of the computer'''
     response = requests.get('https://api.ipify.org')
 
@@ -18,11 +18,9 @@ def get_geolocation(ip_address):
     return city, country, coords
 
 
-def greet():
-    ip_address = retrieve_ip_address()
+def greet(ip_address):
     information = get_geolocation(ip_address)
     
-
     return f'Hello, you are presently in {information[0]},{information[1]} \
 and your cordinates are latitude: {information[2][0]} and longitude: {information[2][1]}'
 
