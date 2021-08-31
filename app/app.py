@@ -1,6 +1,6 @@
 import os
 from flask import Flask, request, render_template
-from message import greet
+from message import greet, retrieve_local_ip_adress
 
 
 app = Flask(__name__)
