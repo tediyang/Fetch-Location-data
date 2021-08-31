@@ -25,5 +25,8 @@ def greet(ip_address):
 and your cordinates are latitude: {information[2][0]} and longitude: {information[2][1]}'
 
 if __name__ == '__main__':
-    print(greet())
+    ip_address = retrieve_local_ip_adress()
+    msg_str = greet(ip_address)
+    print(msg_str)
+    
 
