@@ -6,6 +6,7 @@
 | ------------- |:-------------:|
 | Version Control     | Git & GitHub     |
 | Server-side framework       | Python, & Flask     |
+| DB      | SQLite3     |
 
 ### Functionality:  
 * Fetch user Ip-address
